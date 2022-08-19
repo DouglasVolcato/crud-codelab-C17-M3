@@ -11,8 +11,8 @@ connectToDatabase();
 app.use(express.json());
 app.use(cors());
 app.get("/", (req,res) => res.send({message: "Hello World"}))
-app.use('/termos', routes);
-app.use('/api-docs', routes);
+// app.use('/termos', routes);
+// app.use('/api-docs', routes);
 
 app.listen(port, () => {
   console.log(`Servidor rodando na porta http://localhost:${port}`);
